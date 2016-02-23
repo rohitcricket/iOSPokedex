@@ -64,7 +64,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5xJ-Lf-OEr">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5xJ-Lf-OEr" customClass="PokeCell" customModule="pokedex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -81,7 +81,7 @@
                                                             <exclude reference="hqX-Oy-P2H"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" ambiguous="YES">
+                                                    <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="111"/>
                                                         <mask key="constraints">
                                                             <include reference="hqX-Oy-P2H"/>
@@ -116,13 +116,13 @@
                                                 <exclude reference="UTr-KD-233"/>
                                             </mask>
                                             <mask key="constraints">
-                                                <exclude reference="PaE-ke-42c"/>
-                                                <exclude reference="UqD-ix-ldO"/>
-                                                <exclude reference="h4Q-w9-Gal"/>
                                                 <exclude reference="6y3-2D-D6u"/>
                                                 <exclude reference="EsL-9M-1fA"/>
                                                 <exclude reference="Ggp-wO-iyM"/>
                                                 <exclude reference="STe-GN-5nC"/>
+                                                <exclude reference="PaE-ke-42c"/>
+                                                <exclude reference="UqD-ix-ldO"/>
+                                                <exclude reference="h4Q-w9-Gal"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
@@ -131,15 +131,19 @@
                                                 <include reference="UTr-KD-233"/>
                                             </mask>
                                             <mask key="constraints">
-                                                <include reference="PaE-ke-42c"/>
-                                                <include reference="UqD-ix-ldO"/>
-                                                <include reference="h4Q-w9-Gal"/>
                                                 <include reference="6y3-2D-D6u"/>
                                                 <include reference="EsL-9M-1fA"/>
                                                 <include reference="Ggp-wO-iyM"/>
                                                 <include reference="STe-GN-5nC"/>
+                                                <include reference="PaE-ke-42c"/>
+                                                <include reference="UqD-ix-ldO"/>
+                                                <include reference="h4Q-w9-Gal"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="UTr-KD-233" id="GNd-ZY-pNR"/>
+                                            <outlet property="thumbImg" destination="25R-si-q5O" id="GFQ-Vj-Zgw"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -173,20 +177,20 @@
                                 <exclude reference="jcz-C8-jnW"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Gta-2g-4cA"/>
-                                <exclude reference="Hpa-5a-eq3"/>
-                                <exclude reference="c21-ri-sWC"/>
+                                <exclude reference="BNG-vT-uRe"/>
+                                <exclude reference="g26-TI-6Uv"/>
                                 <exclude reference="L2g-ph-TSa"/>
                                 <exclude reference="Lrw-Rt-kO6"/>
                                 <exclude reference="XzN-xB-vAH"/>
                                 <exclude reference="2gJ-Cd-fAe"/>
                                 <exclude reference="FDc-nl-jCN"/>
                                 <exclude reference="cuk-oc-3tD"/>
+                                <exclude reference="Gta-2g-4cA"/>
+                                <exclude reference="Hpa-5a-eq3"/>
+                                <exclude reference="c21-ri-sWC"/>
                                 <exclude reference="0rV-B4-jEe"/>
                                 <exclude reference="ab2-xN-TTk"/>
                                 <exclude reference="lTq-rK-krL"/>
-                                <exclude reference="BNG-vT-uRe"/>
-                                <exclude reference="g26-TI-6Uv"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -197,20 +201,20 @@
                                 <include reference="jcz-C8-jnW"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Gta-2g-4cA"/>
-                                <include reference="Hpa-5a-eq3"/>
-                                <include reference="c21-ri-sWC"/>
+                                <include reference="BNG-vT-uRe"/>
+                                <include reference="g26-TI-6Uv"/>
                                 <include reference="L2g-ph-TSa"/>
                                 <include reference="Lrw-Rt-kO6"/>
                                 <include reference="XzN-xB-vAH"/>
                                 <include reference="2gJ-Cd-fAe"/>
                                 <include reference="FDc-nl-jCN"/>
                                 <include reference="cuk-oc-3tD"/>
+                                <include reference="Gta-2g-4cA"/>
+                                <include reference="Hpa-5a-eq3"/>
+                                <include reference="c21-ri-sWC"/>
                                 <include reference="0rV-B4-jEe"/>
                                 <include reference="ab2-xN-TTk"/>
                                 <include reference="lTq-rK-krL"/>
-                                <include reference="BNG-vT-uRe"/>
-                                <include reference="g26-TI-6Uv"/>
                             </mask>
                         </variation>
                     </view>
